@@ -435,6 +435,7 @@ void branch_exit(FILE* file){
 
 	uint32_t i;
     //fprintf(file,"history length = x :    GAg_incorrect_pred  PAg_incorrect_pred  GAs_incorrect_pred  PAs_incorrect_pred\n");
+    fprintf(file,"\n---------------------------------------------------\n");
       fprintf(file,"                        GAg_incorrect_pred  PAg_incorrect_pred  GAs_incorrect_pred  PAs_incorrect_pred\n");
 	for(i=0; i < NUM_HIST_LENGTHS; i++){
         fprintf(file,"history length = %d :    %-20lu%-20lu%-20lu%-20lu\n\n",i,GAg_incorrect_pred[i],PAg_incorrect_pred[i],GAs_incorrect_pred[i],PAs_incorrect_pred[i]);
